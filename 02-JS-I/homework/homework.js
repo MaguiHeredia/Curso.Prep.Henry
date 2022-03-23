@@ -44,14 +44,14 @@ function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
   var restar = x - y;
-  return restar
+  return restar;
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
   var multiplicar = x * y;
-  return multiplicar
+  return multiplicar;
   
 }
 
@@ -59,7 +59,7 @@ function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
   var dividir = x / y;
-  return dividir
+  return dividir;
   
 }
 
@@ -68,16 +68,19 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if ( x == y){
-    return true
+    return true;
   }
-  return false
+  return false;
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (str1 == str2) {
+    return true;
+  }
+  return false;
 }
 
 function menosQueNoventa(num) {
@@ -85,9 +88,9 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num < 90){
-    return true
+    return true;
   }
-    return false
+    return false;
   
 }
 
@@ -95,26 +98,38 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (num > 50){
+    return true;
+  }
+  return false;
   
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  
+  var restos == x % y;
+  return restos;
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (num % 2 == 0) {
+    return true;
+  }
+  return false;
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (num % 2 == 0) {
+    return false;
+  }
+  return true;
   
 }
 
