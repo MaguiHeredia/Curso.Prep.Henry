@@ -77,7 +77,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1 == str2) {
+  if (str1.length == str2.length) {
     return true;
   }
   return false;
@@ -108,7 +108,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  var restos == x % y;
+  var restos = x % y;
   return restos;
 }
 
@@ -137,37 +137,46 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  
+var elevar = Math.pow(num,2);
+return elevar;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
+  var elevar = Math.pow(num,3);
+  return elevar;
   
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
+  var elevacion = Math.pow(num,exponent);
+  return elevacion;
   
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
+  var redondear = Math.round(num);
+  return redondear;
   
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+  var redondear  = Math.ceil(num);
+  return redondear
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+  var random = Math.random();
+  return random;
 }
 
 function esPositivo(numero) {
@@ -175,6 +184,15 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
+  if (numero > 0) {
+    var respuesta = "Es positivo";
+    return respuesta;
+  }
+  if (numero < 0) {
+    var respuesta2 = "Es negativo";
+    return respuesta2;
+  }
+  return false;
   
 }
 
@@ -182,19 +200,29 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+ var simbolo = "!";
+ var respuesta = str + simbolo;
+ return respuesta;
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  
+  var espacio = " ";
+  var respuesta = nombre + espacio + apellido;
+  return respuesta;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
+  var saludo = "Hola";
+  var espacio = " ";
+  var signo = "!";
+  var saludo2 = saludo + espacio + nombre + signo;
+  return saludo2;
   
 }
 
